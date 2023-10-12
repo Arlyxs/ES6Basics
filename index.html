@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p>what the hell</p>
+    <script>
+        const person = {
+            name: 'Lyxi',
+            walk: function () { },
+        };
+
+        //to access the function can use the dot notation
+        console.log(person.name);
+        person.walk();
+
+        //this always returns a reference to the current object
+        const person3 = {
+            name: 'Mosh',
+            walk() {
+                console.log(this);
+            },
+        };
+
+        person3.walk();
+        walk();
+
+    </script>
+</body>
+
+</html>

@@ -50,5 +50,14 @@ const person3 = {
   },
 };
 
+//this will search for the window object in strict mode
 person3.walk();
+//const walk = person3.walk;
+//walk();
+//returns undefined as is searching for global object
+
+//using bind so this always returns a reference to the person object
+
+const walk = person3.walk.bind(person3);
 walk();
+console.log(walk());

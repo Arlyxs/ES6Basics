@@ -61,3 +61,5 @@ person3.walk();
 const walk = person3.walk.bind(person3);
 walk();
 console.log(walk());
+
+//ARROW FUNCTIONS

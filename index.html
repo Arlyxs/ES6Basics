@@ -62,6 +62,19 @@
         const squares5 = (number) => number * number;
         console.log(squares5(6));
 
+        //Arrow function simplify array search; filter functionn iterates over parameters
+        const jobs = [
+            { id: 1, isActive: true },
+            { id: 2, isActive: false },
+            { id: 3, isActive: true },
+        ];
+
+        const activeJobs = jobs.filter(function (job) { return job.isActive; });
+        //the es6 new way
+        const activeJobs1 = jobs.filter(job => job.isActive);
+        console.log(activeJobs);
+        console.log(activeJobs1);
+
 
     </script>
 </body>

@@ -99,6 +99,48 @@
         const items = colors.map(color => `<li>${color}</li>`);
         console.log(items);
 
+        //Object Destructuring
+        const address = {
+            street: '',
+            city: '',
+            country: ''
+        };
+
+        //sets the property to the address object, {} = destructuring syntax
+        const { street, city, country } = address;
+
+        //can also set an alias and there is no need to call all the properties from the address object
+        const { street: st } = address;
+
+        //spread operator (uses ellipsis [...].
+        const first = [1, 2, 3];
+        const second = [4, 5, 6];
+
+        const combined = first.concat(second);
+        const combined1 = [...first, ...second];
+
+        console.log(combined);
+        console.log(combined1);
+        //with the spread operator can add elements tot eh array
+        const combination = [...first, 'a', ...second, 'b'];
+        console.log(combination);
+
+        //the spread operator can be used to easily clone an array
+        const clone = [...first];
+        const clone2 = [...combined];
+        console.log('first', first);
+        console.log('clone', clone);
+        console.log('clone2', clone2);
+
+        //the spread operator can also be used to clone and combine objects (note use of {} instead of array []
+        const firstOb = { name: 'Lyxi' };
+        const secondOb = { job: 'instructor' };
+
+        const combo = { ...firstOb, ...secondOb, location: 'Trinidad' };
+        console.log('combo', combo);
+
+
+
 
     </script>
 </body>

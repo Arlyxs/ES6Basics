@@ -2,9 +2,12 @@
 
 /* for modulation to work adjust Json file to reflect that js files are modules (change extension to .mjs) */
 
+/* can export one or more objects from a given module eg also function is exported and imported into index.mjs module.  to set a default export use default in front of the item.  changes the way import statement is coded */
+
 import { Person1 } from './person.mjs';
 
-export class Teacher extends Person1 {
+export function promote() {};
+export default class Teacher extends Person1 {
     constructor(name, degree) {
         super(name);
         this.degree = degree;

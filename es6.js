@@ -213,3 +213,6 @@ const teacher = new Teacher('Lyxi', 'AAS');
 
 /* for modulation to work adjust Json file to reflect that js files are modules (change extension to .mjs) */
 
+/* for react modular imports typical import statement is:
+import React, {Component} from 'react';  */
+

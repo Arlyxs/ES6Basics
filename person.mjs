@@ -2,6 +2,8 @@
 
 /* for modulation to work adjust Json file to reflect that js files are modules (change extension to .mjs) */
 
+/* can export one or more objects from a given module eg also function is exported and imported into index.mjs module */
+
 export class Person1 {
   constructor(name) {
       this.name = name;

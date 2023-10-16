@@ -1,25 +1,20 @@
-//INHERITANCE in classes
-class Person1 {
-    constructor(name) {
-        this.name = name;
-    }
-    
-    walk() {
-      console.log("walk");
-    }
-}
+//MODULES Egmont script 6 ES6
+/* instead of writing all the code in one file splitting the code into different files makes it easier to read the code.  The split code is called modules.
 
-/* The new Teacher class inherits the methods defined in the Person1 class using the extend keyword.  If a constructor is used in Teacher class then need to use the "super" keyword to activate the parameter from the parent class. */
+Once modulated the files have to be made "public" so that they become visible to other separate files */
+
+/* export the class in the separate file and then import it into another file for use.  prefix the class with the word "export".  In hte file that uses the other class at the top of the file use import */
 class Teacher extends Person1 {
-    constructor(name, degree) {
-        super(name);
-        this.degree = degree;
-    }
-    
-    teach() {
-        console.log('teach');
-    }
+  constructor(name, degree) {
+      super(name);
+      this.degree = degree;
+  }
+  
+  teach() {
+      console.log('teach');
+  }
 }
 //pass arguments to teacher, "teacher." has all parameters of Person and Teacher classes
 const teacher = new Teacher('Lyxi', 'AAS');
+teacher.
 

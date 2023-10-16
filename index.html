@@ -43,7 +43,7 @@
         walk();
         console.log(walk());
 
-        //ARROW FUNTIONS
+        //ARROW FUNCTIONS
 
         //the old way
         const squares4 = function (number) {
@@ -56,13 +56,13 @@
         //const squares4 = number => {}
         //if zero parameters need to add parenthesis to the function
         //const squares4 = () => {}
-        //if the body of the function contains a single line and returns a valuecan make the function even simplier
+        //if the body of the function contains a single line and returns a value can make the function even simpler
         //const squares5 = number => number * number
 
         const squares5 = (number) => number * number;
         console.log(squares5(6));
 
-        //Arrow function simplify array search; filter functionn iterates over parameters
+        //Arrow function simplify array search; filter function iterates over parameters
         const jobs = [
             { id: 1, isActive: true },
             { id: 2, isActive: false },
@@ -92,9 +92,9 @@
         /* Arrays Map - used often in React/Map method of array is used to render a list of items from the array  */
 
         /* old function expression
-        const items = colors.map(color => '<li>' + color + '<li>');es6 uses temperate literals to get rid of the concatinations by defining a template for output
+        const items = colors.map(color => '<li>' + color + '<li>');es6 uses temperate literals to get rid of the concatenations by defining a template for output
         const items = colors.map(color => '<li' + color + '<li>'); 
-        ${} is an argument placeholder.  what is placed in the curly braces willbe rendered dynamically at runtime*/
+        ${} is an argument placeholder.  what is placed in the curly braces will be rendered dynamically at runtime*/
         const colors = ['red', 'green', 'blue'];
         const items = colors.map(color => `<li>${color}</li>`);
         console.log(items);

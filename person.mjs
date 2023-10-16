@@ -9,5 +9,6 @@ export class Person1 {
     console.log("walk");
   }
 }
-const person = new Person1;
+const person = new Person1('Mark');
 person
+console.log(person.name);

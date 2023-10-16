@@ -9,3 +9,5 @@ export class Person1 {
     console.log("walk");
   }
 }
+const person = new Person1;
+person

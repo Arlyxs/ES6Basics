@@ -1,6 +1,6 @@
 // use let instead of var.  var is available in the function block
 //let is available only in the block in which they are defined
-//use const to define a variable whose value cannot be changed dynamically, so ialways use const to define variablels unless you plan to dynamically change the value of the variable
+//use const to define a variable whose value cannot be changed dynamically, so always use const to define variables unless you plan to dynamically change the value of the variable
 // function in ES6
 function sayLoopy() {
   for (let i = 0; i < 5; i++) {
@@ -22,7 +22,7 @@ console.log(x);
 
 //Objects are collections of key value pairs
 //name is the key: 'Lyxi' is the value
-//a funttion inside a an object (walk), is a method in the person object
+//a function inside a an object (walk), is a method in the person object
 const person = {
   name: 'Lyxi',
   walk: function () {},
@@ -30,7 +30,7 @@ const person = {
 
 //in es6 the cleaner way ot define a method in the object is to do as follows
 const person2 = {
-  firstName: 'Carrol',
+  firstName: 'Carroll',
   walk() {},
   talk() {},
 };
@@ -74,13 +74,13 @@ console.log(squares4(4));
 //const squares4 = number => {}
 //if zero parameters need to add parenthesis to the function
 //const squares4 = () => {}
-//if the body of the function contains a single line and returns a valuecan make the function even simplier
+//if the body of the function contains a single line and returns a value can make the function even simpler
 //const squares5 = number => number * number
 
 const squares5 = (number) => number * number;
 console.log(squares5(6));
 
-//Arrow function simplify array search; filter functionn iterates over parameters
+//Arrow function simplify array search; filter function iterates over parameters
 const jobs = [
   {id: 1, isActive: true},
   {id: 2, isActive: false},
@@ -93,7 +93,7 @@ const activeJobs1 = jobs.filter(job => job.isActive);
 console.log(activeJobs);
 console.log(activeJobs1);
 
-//set timeout executes the referenced function with a delay in miliseconds.  1000ms = 1 second
+//set timeout executes the referenced function with a delay in milliseconds.  1000ms = 1 second
 //by defining self as this in the talk function it binds the this keyword to the talk function as opposed to the global window.
 
 const person6 = {
@@ -110,9 +110,9 @@ person6.talk();
 /* Arrays Map - used often in React/Map method of array is used to render a list of items from the array  */
 
 /* old function expression
-const items = colors.map(color => '<li>' + color + '<li>');es6 uses temperate literals to get rid of the concatinations by defining a template for output
+const items = colors.map(color => '<li>' + color + '<li>');es6 uses temperate literals to get rid of the concatenations by defining a template for output
 const items = colors.map(color => '<li' + color + '<li>'); 
-${} is an argument placeholder.  what is placed in the curly braces willbe rendered dynamically at runtime*/
+${} is an argument placeholder.  what is placed in the curly braces will be rendered dynamically at runtime*/
 const colors = ['red', 'green', 'blue' ];
 const items = colors.map(color => `<li>${color}</li>`);
 console.log(items);

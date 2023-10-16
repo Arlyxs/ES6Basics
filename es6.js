@@ -211,5 +211,5 @@ class Teacher extends Person1 {
 //pass arguments to teacher, "teacher." has all parameters of Person and Teacher classes
 const teacher = new Teacher('Lyxi', 'AAS');
 
-
+/* for modulation to work adjust Json file to reflect that js files are modules (change extension to .mjs) */
 
